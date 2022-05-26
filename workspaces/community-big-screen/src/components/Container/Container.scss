@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: url("../../assets/bg@2x.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12px;
+    }
+    .title {
+        height: 42px;
+        font-size: 30px;
+        color: #ffffff;
+        line-height: 42px;
+    }
+    .updateTime {
+        height: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #d0deee;
+        line-height: 20px;
+    }
+    .body {
+        flex: 1;
+        padding: 30px 40px 60px;
+    }
+
+    .left{
+        .title{
+            font-family: PangMenZhengDao;
+        }
+    }
+}

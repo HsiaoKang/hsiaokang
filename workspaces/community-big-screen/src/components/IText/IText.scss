@@ -1,0 +1,13 @@
+.i-text {
+    display: inline-flex;
+    align-items: center;
+    height: 16px;
+
+    .i {
+        height: 16px;
+        width: 2px;
+    }
+    .text{
+        margin-left: 8px;
+    }
+}

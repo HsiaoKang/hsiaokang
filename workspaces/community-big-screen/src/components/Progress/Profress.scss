@@ -1,0 +1,59 @@
+.cm-progress {
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .tip-wrap {
+        // display: inline-block;
+        padding-bottom: 8px;
+
+        .tip {
+            position: absolute;
+            display: inline-block;
+            padding: 0 8px;
+            height: 32px;
+            font-size: 24px;
+            font-family: Helvetica-Bold, Helvetica;
+            font-weight: bold;
+            color: #ffffff;
+            line-height: 32px;
+            background: #338bff;
+            border-radius: 4px;
+            position: relative;
+        }
+        .triangle {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            box-sizing: border-box;
+            width: 8px;
+            height: 8px;
+            border-top: 4px solid #338bff;
+            border-right: 3px solid transparent;
+            border-left: 3px solid transparent;
+        }
+    }
+    .progress {
+        display: flex;
+
+        .zero-block {
+            width: 40px;
+            height: 24px;
+            background-color: #338bff;
+            clip-path: polygon(0 0, 32px 0, 100% 100%, 0 100%);
+        }
+        .small-block {
+            width: 8px;
+            height: 28px;
+            background-color: #6c8097;
+            transform: rotate3d(1, 1, 0, 45deg) rotate3d(0, 0, 1, -10deg);
+            margin-top: -2px;
+            box-sizing: border-box;
+            margin-right: 2px;
+
+            &.active {
+                background-color: #338bff;
+            }
+        }
+    }
+}

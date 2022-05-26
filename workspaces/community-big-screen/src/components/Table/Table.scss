@@ -1,0 +1,41 @@
+.cm-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+        height: 32px;
+        line-height: 32px;
+
+        th {
+            text-align: left;
+            height: 20px;
+            font-size: 14px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #66e1df;
+            line-height: 20px;
+            padding: 0 16px;
+        }
+    }
+    tbody {
+        tr {
+            height: 32px;
+            line-height: 32px;
+
+            td {
+                padding: 0 16px;
+            }
+        }
+    }
+
+    .active-row {
+        background-color: #338bff;
+        .col-0 {
+            color: #fff;
+        }
+    }
+
+    .col-0 {
+        color: #338bff;
+    }
+}

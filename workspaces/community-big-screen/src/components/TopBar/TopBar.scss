@@ -1,0 +1,27 @@
+.top-bar {
+    height: 60px;
+    display: flex;
+    width: 100%;
+    .operation {
+    }
+    .weather {
+        margin-left: auto;
+    }
+    .button {
+        height: 40px;
+        padding: 0 32px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        background: rgba(51, 139, 255, 0.1);
+        border-radius: 4px;
+        border: 1px solid #338bff;
+        cursor: pointer;
+        color: #338bff;
+        &.active {
+            background-color: #338bff;
+            color: #fff;
+        }
+    }
+}
